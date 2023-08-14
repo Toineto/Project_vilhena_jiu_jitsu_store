@@ -1,0 +1,22 @@
+/* src/components/TeachersList.css */
+.teachers-container {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.teacher-card {
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  padding: 10px;
+  width: 15%;
+  margin: 5px;
+  box-shadow: 4px 4px 8px 1px rgb(128, 128, 128);
+  text-align: center;
+}
+
+.teacher-card img {
+  max-width: 100%;
+  border-radius: 50%;
+  height: auto;
+}
