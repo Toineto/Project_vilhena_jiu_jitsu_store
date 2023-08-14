@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   background-color: #222;
+  box-shadow: 0 0.1rem 0.5rem #ccc;
 }
 
 .logonav {
-  width: 45%;
+  width: 100px;
   margin-left: 50px;
 }
 
