@@ -7,10 +7,11 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
-          <a href="home"> <img src={ logo300pxBrilho} alt="logo Equipe Vilhena Jiu-Jitsu" /></a>
+          <a href="/"> <img src={ logo300pxBrilho} alt="logo Equipe Vilhena Jiu-Jitsu" /></a>
         </div>
         <div className="footer-links">
-          <h4>Links úteis</h4>
+          <h4>Links úteis:</h4>
+          <br />
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/sobre">Sobre nós</a></li>
@@ -18,7 +19,8 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-social">
-          <h4>Siga-nos nas redes sociais</h4>
+          <h4>Siga-nos nas redes sociais:</h4>
+          <br />
           <ul>
             <li><a href="https://facebook.com/equipevilhena">Facebook</a></li>
             <li><a href="https://www.instagram.com/vilhenajiujitsu/">Instagram</a></li>
@@ -26,6 +28,7 @@ function Footer() {
           </ul>
         </div>
       </div>
+      <br />
       <div className="footer-credits">
         <p>Equipe Vilhena Jiu-Jitsu &copy; 2023 - Todos os direitos reservados</p>
       </div>

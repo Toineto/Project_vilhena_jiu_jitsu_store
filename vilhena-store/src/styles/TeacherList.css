@@ -6,17 +6,38 @@
 }
 
 .teacher-card {
-  border: 1px solid #ccc;
-  border-radius: 5%;
-  padding: 10px;
-  width: 15%;
+  border: 1px;
+  display:flex;
+  border-radius: 1%;
+  width: 30%;
   margin: 5px;
-  box-shadow: 4px 4px 8px 1px rgb(128, 128, 128);
+  box-shadow: 3px 3px 8px 1px rgb(128, 128, 128);
   text-align: center;
 }
 
 .teacher-card img {
-  max-width: 100%;
+  max-width: 200px;
   border-radius: 50%;
-  height: auto;
+  margin: 1.5rem;
+}
+
+.teacher-card h2 {
+  color: red;
+  margin-top: 25px;
+}
+
+.information-profs p {
+  display:inline;
+}
+
+.Professores h1{
+  justify-content: center;
+  display: flex;
+  margin: 10px;
+}
+
+.sub{
+  justify-content: center;
+  display: flex;
+  margin: 10px;
 }

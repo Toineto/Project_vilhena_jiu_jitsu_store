@@ -4,11 +4,16 @@ import '../styles/TeacherList.css';
 const Teacher = ({ name, graduation, Register, local, imageUrl }) => {
   return (
     <div className="teacher-card">
-      <img className="teacher-img" src={imageUrl} alt={name} />
-      <h2>{name}</h2>
-      <p>{graduation}</p>
-      <p>{Register}</p>
-      <p>{local}</p>
+        <a href={name}><img className="teacher-img" src={imageUrl} alt={name} /></a>
+      <div className='information-profs'>
+        <h2>{name}</h2>
+        <br />
+        <p>{graduation}</p>
+        <br />
+        <p>{Register}</p>
+        <br />
+        <p>{local}</p>
+      </div>
     </div>
   );
 };
