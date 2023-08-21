@@ -1,5 +1,5 @@
 .footer {
-  background-color: #1b1b1b;
+  background-color: #000000;
   color: #fff;
   padding: 5px 0;
 }
@@ -9,11 +9,11 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .footer-logo img {
   width: 100px;
-  margin-top: 20px;
 }
 
 .footer-links ul,
@@ -31,11 +31,21 @@
 .footer-links a,
 .footer-social a {
   color: #fff;
+  transition: 0.3s;
   text-decoration: none;
 }
 
+.footer-links a:hover {
+  color: #ff3333;
+}
+
+.footer-social a:hover {
+  color: #ff3333;
+}
+
 .footer-credits p {
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  margin-bottom: 5px;
 }

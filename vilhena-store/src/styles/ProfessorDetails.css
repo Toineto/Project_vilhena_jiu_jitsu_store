@@ -1,0 +1,63 @@
+.professor-details {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.cover-photo img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.profile-picture img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+}
+
+.photo-carousel {
+  margin: 20px 0;
+  /* Estilos para o carrossel de fotos */
+}
+
+.school-location {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,43 @@
+/* src/components/TeachersList.css */
+.teachers-container {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.teacher-card {
+  border: 1px;
+  display:flex;
+  border-radius: 1%;
+  width: 30%;
+  margin: 5px;
+  box-shadow: 3px 3px 8px 1px rgb(128, 128, 128);
+  text-align: center;
+}
+
+.teacher-card img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin: 1.5rem;
+}
+
+.teacher-card h2 {
+  color: red;
+  margin-top: 25px;
+}
+
+.information-profs p {
+  display:inline;
+}
+
+.Professores h1{
+  justify-content: center;
+  display: flex;
+  margin: 10px;
+}
+
+.sub{
+  justify-content: center;
+  display: flex;
+  margin: 10px;
+}
