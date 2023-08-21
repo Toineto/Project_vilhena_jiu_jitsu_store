@@ -1,4 +1,7 @@
 import React from 'react';
+import '../styles/ProfessorDetails.css';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const ProfessorDetails = ({ professor }) => {
   return (
@@ -19,7 +22,17 @@ const ProfessorDetails = ({ professor }) => {
       </div>
       {/* Carrossel de fotos */}
       <div className="photo-carousel">
-        {/* Coloque aqui o carrossel de fotos */}
+        <Carousel>
+          <div>
+            <img src="url-da-foto-1.jpg" alt="Foto 1" />
+            <p className="legend">Legenda da Foto 1</p>
+          </div>
+          <div>
+            <img src="url-da-foto-2.jpg" alt="Foto 2" />
+            <p className="legend">Legenda da Foto 2</p>
+          </div>
+          {/* Adicione mais slides de fotos conforme necessário */}
+        </Carousel>
       </div>
       <div className="school-location">
         <p>Local da Escola: {professor.local}</p>
