@@ -1,6 +1,3 @@
-import React from 'react';
-import ProfessorDetails from '../pages/ProfessorDetails'; // Certifique-se de que o caminho está correto
-
 const professores = [
   {
     id: 1,
@@ -25,15 +22,4 @@ const professores = [
   // ... outros professores
 ];
 
-const Professores = () => {
-  return (
-    <div>
-      <h1>Professores</h1>
-      {professores.map((professor, index) => (
-        <ProfessorDetails key={index} professor={professor} />
-      ))}
-    </div>
-  );
-};
-
-export default Professores;
+export default professores;

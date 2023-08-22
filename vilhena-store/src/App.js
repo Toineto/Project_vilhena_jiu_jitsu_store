@@ -7,7 +7,7 @@ import Professores from "./pages/Professores";
 import About from "./pages/About";
 import Store from "./pages/Store";
 import ProfessorDetails from "./pages/ProfessorDetails";
-// import professores from "./components/ProfessoresDetailsList";
+import professores from "./components/ProfessoresDetailsList";
 
 function App() {
   return (
@@ -29,13 +29,13 @@ function App() {
         <Route path="/ProfessorDetails">
           <ProfessorDetails />
         </Route>
-        {/* {professores.map((professor) => (
+        {professores.map((professor) => (
           <Route
             key={professor.id}
             path={`/professores/${professor.id}`}
             render={() => <ProfessorDetails professor={professor} />}
           />
-        ))} */}
+        ))}
       </Switch>
       <Footer />
     </Router>
