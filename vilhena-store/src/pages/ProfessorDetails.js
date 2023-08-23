@@ -1,9 +1,17 @@
-import React from 'react';
+import { useState, useEffect, useRef } from 'react'
 import '../styles/ProfessorDetails.css';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { motion } from 'framer-motion';
+
 
 const ProfessorDetails = ({ professor }) => {
+  const carousel = useRef();
+  const [width, setWidth] = useState(0)
+
+  useEffect(() => {
+    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+  }, [])
+
+
   return (
     <div className="professor-details">
       <div className="cover-photo">
@@ -15,27 +23,27 @@ const ProfessorDetails = ({ professor }) => {
         </div>
         <div className="info">
           <h2>{professor.nome}</h2>
-          <p>Horários de Aula: {professor.horarios}</p>
+          <p>Registro: {professor.registro}</p>
           <p>Dias de Aula: {professor.dias}</p>
+          <div className="school-location">
+            <p>Local da Escola: {professor.local}</p>
+          </div>
           {/* Outras informações */}
         </div>
       </div>
       {/* Carrossel de fotos */}
-      <div className="photo-carousel">
-        <Carousel>
-          <div>
-            <img src="url-da-foto-1.jpg" alt="Foto 1" />
-            <p className="legend">Legenda da Foto 1</p>
-          </div>
-          <div>
-            <img src="url-da-foto-2.jpg" alt="Foto 2" />
-            <p className="legend">Legenda da Foto 2</p>
-          </div>
-          {/* Adicione mais slides de fotos conforme necessário */}
-        </Carousel>
-      </div>
-      <div className="school-location">
-        <p>Local da Escola: {professor.local}</p>
+      <div>
+        <motion.div ref={carousel} className="carousel" whileTap={{cursor: "grabbing" }}>
+          <motion.div 
+          className="inner"
+          drag="x"
+          dragConstraints={{right: 0, left: width}}
+          >
+          <img className="imgc" src={professor.photoCarrossel1} alt="alt" />
+          <img className="imgc" src={professor.photoCarrossel2} alt="alt" />
+          <img className="imgc" src={professor.photoCarrossel3} alt="alt" />
+          </motion.div>
+        </motion.div>
       </div>
       <div className="floating-whatsapp">
         {/* Ícone do WhatsApp flutuante */}
